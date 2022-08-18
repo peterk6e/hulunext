@@ -4,7 +4,7 @@ import { HomeIcon, BadgeCheckIcon, CollectionIcon, LightningBoltIcon, SearchIcon
 
 const Header = () => {
   return (
-    <header className='flex justify-between flex-col sm:flex-row m-5'>
+    <header className='flex justify-between flex-col sm:flex-row m-5 items-center h-auto'>
     <div className="flex flex-grow justify-evenly max-w-2xl ">
         <HeaderItem title="HOME" Icon={<HomeIcon className='h-8 mb-1'/>} />
         <HeaderItem title="TRENDING" Icon={<LightningBoltIcon className='h-8 mb-1'/> }/>
@@ -16,7 +16,7 @@ const Header = () => {
       <Image
         width={280}
         height={100}
-        className='object-contain'
+        className='object-contain hover:animate-pulse'
         src='https://links.papareact.com/ua6'
       />
     </header>

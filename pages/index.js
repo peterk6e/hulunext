@@ -5,7 +5,7 @@ import Nav from "../components/Nav"
 import requests from "../utils/requests"
 
 export default function Home({ movies }) {
-  console.log(movies)
+  console.log(movies);
   return (
     <div>
       <Head>
@@ -18,7 +18,7 @@ export default function Home({ movies }) {
 
       <Nav />
 
-      <Movies />
+      <Movies movies={movies} />
     </div>
   )
 }

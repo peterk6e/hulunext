@@ -1,8 +1,13 @@
 import React from 'react'
+import Thumbnail from './Thumbnail'
 
-const Movies = () => {
+const Movies = ({movies}) => {
   return (
-    <div>Movies</div>
+    <div>
+        {movies?.map((movie)=>(
+            <Thumbnail key={movie.id} movie={movie} />
+        ))}
+    </div>
   )
 }
 

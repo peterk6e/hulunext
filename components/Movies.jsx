@@ -1,6 +1,5 @@
 import React from "react"
 import Thumbnail from "./Thumbnail"
-import FlipMove from "react-flip-move"
 
 const Movies = ({ movies }) => {
   return (
